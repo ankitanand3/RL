@@ -1,0 +1,31 @@
+# --- Basics_RL environment ---
+# Install with:
+#   cd ~/Documents/pp/Basics_RL
+#   VIRTUAL_ENV=$PWD/.venv ~/.local/bin/uv pip install -r requirements.txt
+
+# Jupyter kernel support
+ipykernel
+ipywidgets
+
+# Core RL
+gymnasium[classic-control]
+
+# Numerics / plotting / utils
+numpy
+matplotlib
+pandas
+tqdm
+
+# --- Optional, add as needed ---
+# gymnasium[box2d]        # LunarLander, BipedalWalker (needs swig)
+# gymnasium[atari]        # Atari envs
+# gymnasium[mujoco]       # continuous-control benchmarks
+# stable-baselines3       # ready-made RL algorithms
+# imageio                 # save episode GIFs/videos
+
+# --- torch: do NOT add a bare "torch" line here ---
+# On this aarch64 GB10 box a plain install pulls the CPU-only wheel.
+# Install explicitly instead:
+#   VIRTUAL_ENV=$PWD/.venv ~/.local/bin/uv pip install \
+#     --index-url https://download.pytorch.org/whl/cu130 \
+#     "torch==2.13.0+cu130" torchvision torchaudio
