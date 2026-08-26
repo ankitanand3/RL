@@ -2,6 +2,7 @@
 # Install with:
 #   cd ~/Documents/pp/Basics_RL
 #   VIRTUAL_ENV=$PWD/.venv ~/.local/bin/uv pip install -r requirements.txt
+torch
 
 # Jupyter kernel support
 ipykernel
@@ -15,6 +16,7 @@ numpy
 matplotlib
 pandas
 tqdm
+scikit-learn
 
 # --- Optional, add as needed ---
 # gymnasium[box2d]        # LunarLander, BipedalWalker (needs swig)
