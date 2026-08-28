@@ -19,9 +19,10 @@ tqdm
 scikit-learn
 
 # --- Optional, add as needed ---
-# gymnasium[box2d]        # LunarLander, BipedalWalker (needs swig)
-# gymnasium[atari]        # Atari envs
-# gymnasium[mujoco]       # continuous-control benchmarks
+gymnasium[box2d]        # LunarLander, BipedalWalker (needs swig)
+gymnasium[atari]        # Atari envs
+gymnasium[mujoco]       # continuous-control benchmarks
+gymnasium[classic_control]
 # stable-baselines3       # ready-made RL algorithms
 # imageio                 # save episode GIFs/videos
 
